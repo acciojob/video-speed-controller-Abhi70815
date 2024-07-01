@@ -1,2 +1,66 @@
+.player {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-/* Your CSS Code here. */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.player__button {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.player__button:hover {
+    opacity: 0.8;
+}
+
+.progress {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress__filled {
+    width: 50%;
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.skip {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.skip:hover {
+    opacity: 0.8;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 20px;
+    margin: 10px 0;
+}
