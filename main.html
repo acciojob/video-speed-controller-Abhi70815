@@ -1,26 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Video Player</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Video Player</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="player">
-        <video src="https://www.w3schools.com/html/mov_bbb.mp4" id="video"></video>
-        <div class="controls">
-            <button class="player__button" data-toggle="play">►</button>
-            <input type="range" id="progress" value="0">
-            <div class="progress">
-                <div class="progress__filled" id="progress-filled"></div>
-            </div>
-            <button class="skip" data-skip="-10">« 10s</button>
-            <button class="skip" data-skip="25">25s »</button>
-            <input type="range" id="volume" min="0" max="100" value="75">
-            <input type="range" id="playbackSpeed" min="0.5" max="2" value="1" step="0.1">
-        </div>
+  <div class="player">
+    <video class="player__video viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+    
+    <div class="player__controls">
+      <button class="player__button toggle" title="Toggle Play">►</button>
+      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+      <input type="range" name="playbackSpeed" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+      <button class="player__button rewind" title="Rewind 10 seconds">« 10s</button>
+      <button class="player__button forward" title="Forward 25 seconds">25s »</button>
+      <div class="progress">
+        <div class="progress__filled"></div>
+      </div>
     </div>
-    <script src="script.js"></script>
+  </div>
+  <script src="scripts.js"></script>
 </body>
 </html>
